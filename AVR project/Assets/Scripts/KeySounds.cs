@@ -15,7 +15,11 @@ public class KeySounds : MonoBehaviour {
     public AudioClip key2Clip;
     public AudioClip key3Clip;
     public AudioClip key4highestClip;
-    public AudioSource source;
+    public AudioSource key0source;
+    public AudioSource key1source;
+    public AudioSource key2source;
+    public AudioSource key3source;
+    public AudioSource key4source;
     public GameObject drumstick;
 
     void Start () {
@@ -32,27 +36,27 @@ public class KeySounds : MonoBehaviour {
         {
             if (col == key0lowest)
             {
-                source.PlayOneShot(key0lowestClip);
+                key0source.PlayOneShot(key0lowestClip);
             }
 
             if (col == key1)
             {
-                source.PlayOneShot(key1Clip);
+                key1source.PlayOneShot(key1Clip);
             }
 
             if (col == key2)
             {
-                source.PlayOneShot(key2Clip);
+                key2source.PlayOneShot(key2Clip);
             }
 
             if (col == key3)
             {
-                source.PlayOneShot(key3Clip);
+                key3source.PlayOneShot(key3Clip);
             }
 
             if (col == key4highest)
             {
-                source.PlayOneShot(key4highestClip);
+                key4source.PlayOneShot(key4highestClip);
             }
         }
         

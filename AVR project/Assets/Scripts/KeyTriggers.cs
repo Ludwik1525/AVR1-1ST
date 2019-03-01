@@ -15,6 +15,7 @@ public class KeyTriggers : MonoBehaviour {
     private int count2 = 0;
     private int count3 = 0;
     private int count4 = 0;
+    public float average;
 
     void Start () {
 		
@@ -64,6 +65,7 @@ public class KeyTriggers : MonoBehaviour {
     float CountAverage(int k0, int k1, int k2, int k3, int k4)
     {
         float result = 1f*(k0 + 2 * k1 + 3 * k2 + 4 * k3 + 5 * k4) / (k0 + k1 + k2 + k3 + k4);
+        average = result;
         return result;
     }
 

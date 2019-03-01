@@ -9,10 +9,19 @@ public class BeginGame : MonoBehaviour
     public Text keyInformation;
     private bool wasPressed = false;
     public GameObject drumstick;
+    private bool spawnObject = false;
+    public GameObject highToneStar;
+    public GameObject middleToneStar;
+    public GameObject lowToneStar;
+    private float average;
 
-	void Start ()
+
+    void Start ()
     {
         drumstick.gameObject.tag = "Inactive";
+        lowToneStar.gameObject.SetActive(false);
+        middleToneStar.gameObject.SetActive(false);
+        highToneStar.gameObject.SetActive(false);
     }
 	
 	void Update () {
@@ -23,6 +32,26 @@ public class BeginGame : MonoBehaviour
             StartCoroutine(Counter(30, GetComponent<Text>()));
             wasPressed = true;
             drumstick.gameObject.tag = "Active";
+        }
+
+        //KeyTriggers keyTriggers = drumstick.GetComponent<KeyTriggers>();
+        TemporaryTestKeys keyTriggers = drumstick.GetComponent<TemporaryTestKeys>();
+        average = keyTriggers.average;
+
+        if (spawnObject)
+        {
+            if (average < 2)
+            {
+                lowToneStar.gameObject.SetActive(true);
+            }
+            else if (average < 4)
+            {
+                middleToneStar.gameObject.SetActive(true);
+            }
+            else
+            {
+                highToneStar.gameObject.SetActive(true);
+            }
         }
 	}
 
@@ -35,6 +64,12 @@ public class BeginGame : MonoBehaviour
             {
                 i.color = new Color(1, 0.2f, 0.2f, 1);
             }
+            if (int.Parse(i.text) == 0)
+            {
+                spawnObject = true;
+            }
+
+
             yield return new WaitForSeconds(1);
         }
     }

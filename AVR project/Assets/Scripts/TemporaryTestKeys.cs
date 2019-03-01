@@ -14,13 +14,18 @@ public class TemporaryTestKeys : MonoBehaviour {
     public AudioClip key2Clip;
     public AudioClip key3Clip;
     public AudioClip key4highestClip;
-    public AudioSource source;
     public GameObject drumstick;
     private int count0 = 0;
     private int count1 = 0;
     private int count2 = 0;
     private int count3 = 0;
     private int count4 = 0;
+    public AudioSource key0source;
+    public AudioSource key1source;
+    public AudioSource key2source;
+    public AudioSource key3source;
+    public AudioSource key4source;
+    public float average;
 
     void Start ()
     {
@@ -33,31 +38,31 @@ public class TemporaryTestKeys : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                source.PlayOneShot(key0lowestClip);
+                key0source.PlayOneShot(key0lowestClip);
                 count0++;
             }
 
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                source.PlayOneShot(key1Clip);
+                key1source.PlayOneShot(key1Clip);
                 count1++;
             }
 
             if (Input.GetKeyDown(KeyCode.Alpha3))
             {
-                source.PlayOneShot(key2Clip);
+                key2source.PlayOneShot(key2Clip);
                 count2++;
             }
 
             if (Input.GetKeyDown(KeyCode.Alpha4))
             {
-                source.PlayOneShot(key3Clip);
+                key3source.PlayOneShot(key3Clip);
                 count3++;
             }
 
             if (Input.GetKeyDown(KeyCode.Alpha5))
             {
-                source.PlayOneShot(key4highestClip);
+                key4source.PlayOneShot(key4highestClip);
                 count4++;
             }
 
@@ -69,6 +74,7 @@ public class TemporaryTestKeys : MonoBehaviour {
     float CountAverage(int k0, int k1, int k2, int k3, int k4)
     {
         float result = 1f*(k0 + 2 * k1 + 3 * k2 + 4 * k3 + 5 * k4) / (k0 + k1 + k2 + k3 + k4);
+        average = result;
         return result;
     }
 }
