@@ -10,11 +10,11 @@ public class KeyTriggers : MonoBehaviour {
     public GameObject key3;
     public GameObject key4highest;
     public GameObject drumstick;
-    private int count0 = 0;
-    private int count1 = 0;
-    private int count2 = 0;
-    private int count3 = 0;
-    private int count4 = 0;
+    public int count0 = 0;
+    public int count1 = 0;
+    public int count2 = 0;
+    public int count3 = 0;
+    public int count4 = 0;
     public float average;
 
     void Start () {

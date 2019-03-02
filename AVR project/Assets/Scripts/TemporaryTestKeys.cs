@@ -15,11 +15,11 @@ public class TemporaryTestKeys : MonoBehaviour {
     public AudioClip key3Clip;
     public AudioClip key4highestClip;
     public GameObject drumstick;
-    private int count0 = 0;
-    private int count1 = 0;
-    private int count2 = 0;
-    private int count3 = 0;
-    private int count4 = 0;
+    public int count0 = 0;
+    public int count1 = 0;
+    public int count2 = 0;
+    public int count3 = 0;
+    public int count4 = 0;
     public AudioSource key0source;
     public AudioSource key1source;
     public AudioSource key2source;

@@ -346,10 +346,11 @@
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\Helpers\OVRMicInput.cs" />
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceMod.cs" />
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceModContext.cs" />
-    <Compile Include="Assets\Scripts\BeginGame.cs" />
     <Compile Include="Assets\Scripts\DrumstickControl.cs" />
     <Compile Include="Assets\Scripts\KeySounds.cs" />
     <Compile Include="Assets\Scripts\KeyTriggers.cs" />
+    <Compile Include="Assets\Scripts\Stage1.cs" />
+    <Compile Include="Assets\Scripts\Stage2.cs" />
     <Compile Include="Assets\Scripts\TemporaryTestKeys.cs" />
     <None Include="Assets\Oculus\Avatar\Content\Materials\AvatarMaterialStateShader.cginc" />
     <None Include="Assets\Oculus\Avatar\Samples\CrossPlatform\Readme.txt" />
