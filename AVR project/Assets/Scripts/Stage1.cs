@@ -67,6 +67,9 @@ public class Stage1 : MonoBehaviour
                 keyTriggers.count2 = 0;
                 keyTriggers.count3 = 0;
                 keyTriggers.count4 = 0;
+                keyTriggers.sub0 = false;
+                keyTriggers.sub1 = false;
+                keyTriggers.sub2 = false;
                 keyInformation.gameObject.SetActive(true);
                 wasPressed = false;
                 drumstick.gameObject.tag = "Inactive";
