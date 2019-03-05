@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using InputTracking = UnityEngine.XR.InputTracking;
+using Node = UnityEngine.XR.XRNode;
+using Settings = UnityEngine.XR.XRSettings;
 
 public class Stage1 : MonoBehaviour
 {
@@ -31,7 +34,7 @@ public class Stage1 : MonoBehaviour
 
         if(!nextReady)
         {
-            if (Input.GetKeyDown(KeyCode.Space) && !wasPressed)
+            if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger) && !wasPressed)
             {
                 keyInformation.gameObject.SetActive(false);
                 StartCoroutine(Counter(30, counter.GetComponent<Text>()));
@@ -39,8 +42,8 @@ public class Stage1 : MonoBehaviour
                 drumstick.gameObject.tag = "Active";
             }
 
-            //KeyTriggers keyTriggers = drumstick.GetComponent<KeyTriggers>();
-            TemporaryTestKeys keyTriggers = drumstick.GetComponent<TemporaryTestKeys>();
+            KeyTriggers keyTriggers = drumstick.GetComponent<KeyTriggers>();
+            //TemporaryTestKeys keyTriggers = drumstick.GetComponent<TemporaryTestKeys>();
             average = keyTriggers.average;
 
             if (spawnObject)

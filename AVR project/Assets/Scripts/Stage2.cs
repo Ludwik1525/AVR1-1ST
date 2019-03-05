@@ -35,13 +35,13 @@ public class Stage2 : MonoBehaviour {
             //KeyTriggers keyTriggers = drumstick.GetComponent<KeyTriggers>();
             Stage1 stage1 = GetComponent<Stage1>();
 
-            //KeyTriggers keyTriggers = drumstick.GetComponent<KeyTriggers>();
-            TemporaryTestKeys keyTriggers = drumstick.GetComponent<TemporaryTestKeys>();
+            KeyTriggers keyTriggers = drumstick.GetComponent<KeyTriggers>();
+            //TemporaryTestKeys keyTriggers = drumstick.GetComponent<TemporaryTestKeys>();
             average = keyTriggers.average;
 
             if (stage1.nextReady)
             {
-                if (Input.GetKeyDown(KeyCode.Space) && !wasPressed)
+                if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger) && !wasPressed)
                 {
                     keyInformation.gameObject.SetActive(false);
                     StartCoroutine(Counter(30, counter.GetComponent<Text>()));
