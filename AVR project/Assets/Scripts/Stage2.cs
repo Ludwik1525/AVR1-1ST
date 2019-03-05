@@ -35,9 +35,9 @@ public class Stage2 : MonoBehaviour {
             //KeyTriggers keyTriggers = drumstick.GetComponent<KeyTriggers>();
             Stage1 stage1 = GetComponent<Stage1>();
 
-            KeyTriggers keyTriggers = drumstick.GetComponent<KeyTriggers>();
+            AverageCalc averageCalc = drumstick.GetComponent<AverageCalc>();
             //TemporaryTestKeys keyTriggers = drumstick.GetComponent<TemporaryTestKeys>();
-            average = keyTriggers.average;
+            average = averageCalc.average;
 
             if (stage1.nextReady)
             {
@@ -64,14 +64,14 @@ public class Stage2 : MonoBehaviour {
                 if (stageDone)
                 {
                     StopAllCoroutines();
-                    keyTriggers.count0 = 0;
-                    keyTriggers.count1 = 0;
-                    keyTriggers.count2 = 0;
-                    keyTriggers.count3 = 0;
-                    keyTriggers.count4 = 0;
-                    keyTriggers.sub0 = false;
-                    keyTriggers.sub1 = false;
-                    keyTriggers.sub2 = false;
+                    averageCalc.count0 = 0;
+                    averageCalc.count1 = 0;
+                    averageCalc.count2 = 0;
+                    averageCalc.count3 = 0;
+                    averageCalc.count4 = 0;
+                    averageCalc.sub0 = false;
+                    averageCalc.sub1 = false;
+                    averageCalc.sub2 = false;
                     keyInformation.gameObject.SetActive(true);
                     wasPressed = false;
                     drumstick.gameObject.tag = "Inactive";

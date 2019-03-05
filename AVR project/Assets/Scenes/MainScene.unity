@@ -269,7 +269,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 83.630005, y: -79.3}
+  m_AnchoredPosition: {x: 83.630005, y: -79.29999}
   m_SizeDelta: {x: -683.11, y: -195.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &91082135
@@ -324,6 +324,7 @@ GameObject:
   - component: {fileID: 122420707}
   - component: {fileID: 122420706}
   - component: {fileID: 122420709}
+  - component: {fileID: 122420710}
   m_Layer: 0
   m_Name: Key0
   m_TagString: Untagged
@@ -410,6 +411,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1.5, z: 1.5}
   m_Center: {x: -0.00000020861626, y: 0.0000019073486, z: 0.00000023841858}
+--- !u!114 &122420710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 122420704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1393b40bd82181f439ddc9be258511ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key0lowest: {fileID: 122420704}
+  key1: {fileID: 217214501}
+  key2: {fileID: 1208411329}
+  key3: {fileID: 1565831215}
+  key4highest: {fileID: 552958203}
+  key0lowestClip: {fileID: 8300000, guid: a2e13a1fdbe40084480a23c90a35d3da, type: 3}
+  key1Clip: {fileID: 8300000, guid: f9d9c1858249d8d44afd777b4bc47d4e, type: 3}
+  key2Clip: {fileID: 8300000, guid: c64f5ada2b0305a4b8d2ec4edd5cc16c, type: 3}
+  key3Clip: {fileID: 8300000, guid: 54b6aa415c9b1434a8e544d2a5b21564, type: 3}
+  key4highestClip: {fileID: 8300000, guid: f9387e179272a8f42b4b1197848f98ef, type: 3}
+  drumstick: {fileID: 2045179796}
+  audioSource: {fileID: 2045179797}
 --- !u!1 &144589890
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,6 +532,7 @@ GameObject:
   - component: {fileID: 217214504}
   - component: {fileID: 217214503}
   - component: {fileID: 217214506}
+  - component: {fileID: 217214507}
   m_Layer: 0
   m_Name: Key1
   m_TagString: Untagged
@@ -594,6 +619,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1.5, z: 1.5}
   m_Center: {x: -0.00000023841858, y: 0.0000019073486, z: 0}
+--- !u!114 &217214507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 217214501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1393b40bd82181f439ddc9be258511ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key0lowest: {fileID: 122420704}
+  key1: {fileID: 217214501}
+  key2: {fileID: 1208411329}
+  key3: {fileID: 1565831215}
+  key4highest: {fileID: 552958203}
+  key0lowestClip: {fileID: 8300000, guid: a2e13a1fdbe40084480a23c90a35d3da, type: 3}
+  key1Clip: {fileID: 8300000, guid: f9d9c1858249d8d44afd777b4bc47d4e, type: 3}
+  key2Clip: {fileID: 8300000, guid: c64f5ada2b0305a4b8d2ec4edd5cc16c, type: 3}
+  key3Clip: {fileID: 8300000, guid: 54b6aa415c9b1434a8e544d2a5b21564, type: 3}
+  key4highestClip: {fileID: 8300000, guid: f9387e179272a8f42b4b1197848f98ef, type: 3}
+  drumstick: {fileID: 2045179796}
+  audioSource: {fileID: 2045179797}
 --- !u!1 &217559998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,7 +1122,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -263.71002, y: -71.50001}
+  m_AnchoredPosition: {x: -263.71002, y: -71.5}
   m_SizeDelta: {x: 161, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &435312001
@@ -1347,6 +1395,7 @@ GameObject:
   - component: {fileID: 552958206}
   - component: {fileID: 552958205}
   - component: {fileID: 552958208}
+  - component: {fileID: 552958209}
   m_Layer: 0
   m_Name: Key4
   m_TagString: Untagged
@@ -1433,6 +1482,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1.5, z: 1.5}
   m_Center: {x: 0, y: 0.0000019073486, z: 0}
+--- !u!114 &552958209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 552958203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1393b40bd82181f439ddc9be258511ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key0lowest: {fileID: 122420704}
+  key1: {fileID: 217214501}
+  key2: {fileID: 1208411329}
+  key3: {fileID: 1565831215}
+  key4highest: {fileID: 552958203}
+  key0lowestClip: {fileID: 8300000, guid: a2e13a1fdbe40084480a23c90a35d3da, type: 3}
+  key1Clip: {fileID: 8300000, guid: f9d9c1858249d8d44afd777b4bc47d4e, type: 3}
+  key2Clip: {fileID: 8300000, guid: c64f5ada2b0305a4b8d2ec4edd5cc16c, type: 3}
+  key3Clip: {fileID: 8300000, guid: 54b6aa415c9b1434a8e544d2a5b21564, type: 3}
+  key4highestClip: {fileID: 8300000, guid: f9387e179272a8f42b4b1197848f98ef, type: 3}
+  drumstick: {fileID: 2045179796}
+  audioSource: {fileID: 2045179797}
 --- !u!1 &590825472 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 199838, guid: 9740090b9019fec4885433a4c6d422d7,
@@ -2717,6 +2789,7 @@ GameObject:
   - component: {fileID: 1208411332}
   - component: {fileID: 1208411331}
   - component: {fileID: 1208411334}
+  - component: {fileID: 1208411335}
   m_Layer: 0
   m_Name: Key2
   m_TagString: Untagged
@@ -2803,6 +2876,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1.5, z: 1.5}
   m_Center: {x: 0, y: 0.0000019073486, z: 0}
+--- !u!114 &1208411335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1208411329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1393b40bd82181f439ddc9be258511ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key0lowest: {fileID: 122420704}
+  key1: {fileID: 217214501}
+  key2: {fileID: 1208411329}
+  key3: {fileID: 1565831215}
+  key4highest: {fileID: 552958203}
+  key0lowestClip: {fileID: 8300000, guid: a2e13a1fdbe40084480a23c90a35d3da, type: 3}
+  key1Clip: {fileID: 8300000, guid: f9d9c1858249d8d44afd777b4bc47d4e, type: 3}
+  key2Clip: {fileID: 8300000, guid: c64f5ada2b0305a4b8d2ec4edd5cc16c, type: 3}
+  key3Clip: {fileID: 8300000, guid: 54b6aa415c9b1434a8e544d2a5b21564, type: 3}
+  key4highestClip: {fileID: 8300000, guid: f9387e179272a8f42b4b1197848f98ef, type: 3}
+  drumstick: {fileID: 2045179796}
+  audioSource: {fileID: 2045179797}
 --- !u!1 &1243840079
 GameObject:
   m_ObjectHideFlags: 0
@@ -3057,6 +3153,7 @@ GameObject:
   - component: {fileID: 1565831218}
   - component: {fileID: 1565831217}
   - component: {fileID: 1565831220}
+  - component: {fileID: 1565831221}
   m_Layer: 0
   m_Name: Key3
   m_TagString: Untagged
@@ -3143,6 +3240,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1.5, z: 1.5}
   m_Center: {x: 0, y: 0.0000019073486, z: 0.00000023841858}
+--- !u!114 &1565831221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1565831215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1393b40bd82181f439ddc9be258511ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key0lowest: {fileID: 0}
+  key1: {fileID: 0}
+  key2: {fileID: 0}
+  key3: {fileID: 0}
+  key4highest: {fileID: 0}
+  key0lowestClip: {fileID: 8300000, guid: a2e13a1fdbe40084480a23c90a35d3da, type: 3}
+  key1Clip: {fileID: 8300000, guid: f9d9c1858249d8d44afd777b4bc47d4e, type: 3}
+  key2Clip: {fileID: 8300000, guid: c64f5ada2b0305a4b8d2ec4edd5cc16c, type: 3}
+  key3Clip: {fileID: 8300000, guid: 54b6aa415c9b1434a8e544d2a5b21564, type: 3}
+  key4highestClip: {fileID: 8300000, guid: f9387e179272a8f42b4b1197848f98ef, type: 3}
+  drumstick: {fileID: 2045179796}
+  audioSource: {fileID: 2045179797}
 --- !u!1001 &1627172639
 Prefab:
   m_ObjectHideFlags: 0
@@ -3879,12 +3999,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2045179798}
-  - component: {fileID: 2045179797}
   - component: {fileID: 2045179799}
-  - component: {fileID: 2045179800}
   - component: {fileID: 2045179802}
   - component: {fileID: 2045179803}
   - component: {fileID: 2045179801}
+  - component: {fileID: 2045179797}
   m_Layer: 0
   m_Name: Drumstick
   m_TagString: Inactive
@@ -3892,33 +4011,101 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2045179797
-MonoBehaviour:
+--- !u!82 &2045179797
+AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2045179796}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90ff3a8e6aaead3468ce873e18c19a57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key0lowest: {fileID: 122420704}
-  key1: {fileID: 217214501}
-  key2: {fileID: 1208411329}
-  key3: {fileID: 1565831215}
-  key4highest: {fileID: 552958203}
-  key0lowestClip: {fileID: 8300000, guid: a2e13a1fdbe40084480a23c90a35d3da, type: 3}
-  key1Clip: {fileID: 8300000, guid: f9d9c1858249d8d44afd777b4bc47d4e, type: 3}
-  key2Clip: {fileID: 8300000, guid: c64f5ada2b0305a4b8d2ec4edd5cc16c, type: 3}
-  key3Clip: {fileID: 8300000, guid: 54b6aa415c9b1434a8e544d2a5b21564, type: 3}
-  key4highestClip: {fileID: 8300000, guid: f9387e179272a8f42b4b1197848f98ef, type: 3}
-  key0source: {fileID: 461630548}
-  key1source: {fileID: 2023387770}
-  key2source: {fileID: 1243840081}
-  key3source: {fileID: 32548049}
-  key4source: {fileID: 1143270340}
-  drumstick: {fileID: 2045179796}
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &2045179798
 Transform:
   m_ObjectHideFlags: 0
@@ -3945,67 +4132,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fda537133523cb49b2eac4b4a037121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key0lowest: {fileID: 122420704}
-  key1: {fileID: 217214501}
-  key2: {fileID: 1208411329}
-  key3: {fileID: 1565831215}
-  key4highest: {fileID: 552958203}
-  key0lowestClip: {fileID: 8300000, guid: a2e13a1fdbe40084480a23c90a35d3da, type: 3}
-  key1Clip: {fileID: 8300000, guid: f9d9c1858249d8d44afd777b4bc47d4e, type: 3}
-  key2Clip: {fileID: 8300000, guid: c64f5ada2b0305a4b8d2ec4edd5cc16c, type: 3}
-  key3Clip: {fileID: 8300000, guid: 54b6aa415c9b1434a8e544d2a5b21564, type: 3}
-  key4highestClip: {fileID: 8300000, guid: f9387e179272a8f42b4b1197848f98ef, type: 3}
   drumstick: {fileID: 2045179796}
   count0: 0
   count1: 0
   count2: 0
   count3: 0
   count4: 0
-  key0source: {fileID: 461630548}
-  key1source: {fileID: 2023387770}
-  key2source: {fileID: 1243840081}
-  key3source: {fileID: 32548049}
-  key4source: {fileID: 1143270340}
   average: 0
-  first: 0
-  second: 0
-  third: 0
-  sub0: 0
-  sub1: 0
-  sub2: 0
---- !u!114 &2045179800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2045179796}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96b538327ccb494287034b808bef915, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key0lowest: {fileID: 122420704}
-  key1: {fileID: 217214501}
-  key2: {fileID: 1208411329}
-  key3: {fileID: 1565831215}
-  key4highest: {fileID: 552958203}
-  key0lowestClip: {fileID: 8300000, guid: a2e13a1fdbe40084480a23c90a35d3da, type: 3}
-  key1Clip: {fileID: 8300000, guid: f9d9c1858249d8d44afd777b4bc47d4e, type: 3}
-  key2Clip: {fileID: 8300000, guid: c64f5ada2b0305a4b8d2ec4edd5cc16c, type: 3}
-  key3Clip: {fileID: 8300000, guid: 54b6aa415c9b1434a8e544d2a5b21564, type: 3}
-  key4highestClip: {fileID: 8300000, guid: f9387e179272a8f42b4b1197848f98ef, type: 3}
-  drumstick: {fileID: 2045179796}
-  count0: 0
-  count1: 0
-  count2: 0
-  count3: 0
-  count4: 0
-  key0source: {fileID: 461630548}
-  key1source: {fileID: 2023387770}
-  key2source: {fileID: 1243840081}
-  key3source: {fileID: 32548049}
-  key4source: {fileID: 1143270340}
-  average: 0
+  startedCoroutine: 0
   first: 0
   second: 0
   third: 0
