@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -24,10 +25,6 @@ public class AverageCalc : MonoBehaviour {
 	}
 	
 	void Update () {
-	}
-
-    void OnTriggerEnter(Collider col)
-    {
         if (drumstick.gameObject.tag == "Active")
         {
             if (!startedCoroutine)
@@ -124,5 +121,27 @@ public class AverageCalc : MonoBehaviour {
             yield return new WaitForSeconds(1);
         }
 
+    }
+
+    public void Increment(int key)
+    {
+        switch (key)
+        {
+            case 0:
+                this.count0++;
+                break;
+            case 1:
+                this.count1++;
+                break;
+            case 2:
+                this.count2++;
+                break;
+            case 3:
+                this.count3++;
+                break;
+            case 4:
+                this.count4++;
+                break;
+        }
     }
 }
