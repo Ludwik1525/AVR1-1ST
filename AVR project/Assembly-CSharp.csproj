@@ -352,6 +352,7 @@
     <Compile Include="Assets\Scripts\Stage1.cs" />
     <Compile Include="Assets\Scripts\Stage2.cs" />
     <Compile Include="Assets\Scripts\TemporaryTestKeys.cs" />
+    <Compile Include="Assets\Scripts\YearsPassing.cs" />
     <None Include="Assets\Oculus\Avatar\Content\Materials\AvatarMaterialStateShader.cginc" />
     <None Include="Assets\Oculus\Avatar\Samples\CrossPlatform\Readme.txt" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
