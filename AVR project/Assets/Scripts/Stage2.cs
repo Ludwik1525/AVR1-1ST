@@ -15,8 +15,11 @@ public class Stage2 : MonoBehaviour {
     private bool stageDone = false;
     public bool nextReady = false;
     private bool isPlaying = false;
-    public GameObject rockPlanet;
-    public GameObject gasPlanet;
+    public GameObject highTonePlanet;
+    public GameObject bigTonePlanet;
+    public GameObject middleTonePlanet;
+    public GameObject lowTonePlanet;
+    public GameObject lowestTonePlanet;
 
     private Stage1 stage1;
 
@@ -25,8 +28,11 @@ public class Stage2 : MonoBehaviour {
 
     void Start()
     {
-        rockPlanet.gameObject.SetActive(false);
-        gasPlanet.gameObject.SetActive(false);
+        highTonePlanet.gameObject.SetActive(false);
+        bigTonePlanet.gameObject.SetActive(false);
+        middleTonePlanet.gameObject.SetActive(false);
+        lowTonePlanet.gameObject.SetActive(false);
+        lowestTonePlanet.gameObject.SetActive(false);
         stage1 = GetComponent<Stage1>();
         averageCalc = drumstick.GetComponent<AverageCalc>();
     }
@@ -50,13 +56,25 @@ public class Stage2 : MonoBehaviour {
 
                 if (spawnObject)
                 {
-                    if (average < 2.5)
+                    if (average < 1.1)
                     {
-                        rockPlanet.gameObject.SetActive(true);
+                        lowestTonePlanet.gameObject.SetActive(true);
+                    }
+                    else if (average < 2)
+                    {
+                        lowTonePlanet.gameObject.SetActive(true);
+                    }
+                    if (average < 3)
+                    {
+                        middleTonePlanet.gameObject.SetActive(true);
+                    }
+                    else if (average < 4)
+                    {
+                        bigTonePlanet.gameObject.SetActive(true);
                     }
                     else
                     {
-                        gasPlanet.gameObject.SetActive(true);
+                        highTonePlanet.gameObject.SetActive(true);
                     }
                 }
 

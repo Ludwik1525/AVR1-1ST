@@ -15,8 +15,10 @@ public class Stage1 : MonoBehaviour
     public GameObject drumstick;
     private bool spawnObject = false;
     public GameObject highToneStar;
+    public GameObject bigToneStar;
     public GameObject middleToneStar;
     public GameObject lowToneStar;
+    public GameObject lowestToneStar;
     private float average;
     private bool stageDone=false;
     public bool nextReady = false;
@@ -25,8 +27,10 @@ public class Stage1 : MonoBehaviour
     void Start ()
     {
         drumstick.gameObject.tag = "Inactive";
+        lowestToneStar.gameObject.SetActive(false);
         lowToneStar.gameObject.SetActive(false);
         middleToneStar.gameObject.SetActive(false);
+        bigToneStar.gameObject.SetActive(false);
         highToneStar.gameObject.SetActive(false);
     }
 	
@@ -47,13 +51,21 @@ public class Stage1 : MonoBehaviour
 
             if (spawnObject)
             {
-                if (average < 2)
+                if (average < 1.1)
+                {
+                    lowestToneStar.gameObject.SetActive(true);
+                }
+                else if (average <2)
                 {
                     lowToneStar.gameObject.SetActive(true);
                 }
-                else if (average < 4)
+                if (average < 3)
                 {
                     middleToneStar.gameObject.SetActive(true);
+                }
+                else if (average < 4)
+                {
+                    bigToneStar.gameObject.SetActive(true);
                 }
                 else
                 {
