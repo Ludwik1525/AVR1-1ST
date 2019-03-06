@@ -43,7 +43,6 @@ public class Stage1 : MonoBehaviour
             }
 
             AverageCalc averageCalc = drumstick.GetComponent<AverageCalc>();
-            //TemporaryTestKeys keyTriggers = drumstick.GetComponent<TemporaryTestKeys>();
             average = averageCalc.average;
 
             if (spawnObject)

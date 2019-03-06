@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 122420710}
   - component: {fileID: 122420711}
   m_Layer: 0
-  m_Name: Key0
+  m_Name: Key4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -215,13 +215,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 122420704}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.1184664, y: 0.9041435, z: -1.3709965}
+  m_LocalRotation: {x: 0, y: 0.06975647, z: 0, w: 0.9975641}
+  m_LocalPosition: {x: -2.1184664, y: 0.9041435, z: -1.05}
   m_LocalScale: {x: 0.6, y: 0.06, z: 2.2}
   m_Children: []
   m_Father: {fileID: 2145841391}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 8, z: 0}
 --- !u!65 &122420706
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -299,9 +299,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1393b40bd82181f439ddc9be258511ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyClip: {fileID: 8300000, guid: a2e13a1fdbe40084480a23c90a35d3da, type: 3}
+  keyClip: {fileID: 8300000, guid: f9387e179272a8f42b4b1197848f98ef, type: 3}
   drumstick: {fileID: 910702895}
-  keyNumber: 0
+  keyNumber: 4
 --- !u!82 &122420711
 AudioSource:
   m_ObjectHideFlags: 0
@@ -311,7 +311,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a2e13a1fdbe40084480a23c90a35d3da, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -422,7 +422,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 144589890}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.39861923, y: 1.5666665, z: -0.050802227}
+  m_LocalPosition: {x: -0.391, y: 1.5666665, z: -0.050802227}
   m_LocalScale: {x: 0.019499596, y: 0.84700406, z: 0.7799837}
   m_Children: []
   m_Father: {fileID: 1099094654}
@@ -498,7 +498,7 @@ GameObject:
   - component: {fileID: 217214507}
   - component: {fileID: 217214508}
   m_Layer: 0
-  m_Name: Key1
+  m_Name: Key3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -510,13 +510,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 217214501}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.89346635, y: 0.9041435, z: -1.3709965}
+  m_LocalRotation: {x: 0, y: 0.026176924, z: 0, w: 0.99965733}
+  m_LocalPosition: {x: -0.89346635, y: 0.9041435, z: -1.27}
   m_LocalScale: {x: 0.6, y: 0.06, z: 2.3}
   m_Children: []
   m_Father: {fileID: 2145841391}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 3, z: 0}
 --- !u!65 &217214503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -594,9 +594,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1393b40bd82181f439ddc9be258511ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyClip: {fileID: 8300000, guid: f9d9c1858249d8d44afd777b4bc47d4e, type: 3}
+  keyClip: {fileID: 8300000, guid: 54b6aa415c9b1434a8e544d2a5b21564, type: 3}
   drumstick: {fileID: 910702895}
-  keyNumber: 1
+  keyNumber: 3
 --- !u!82 &217214508
 AudioSource:
   m_ObjectHideFlags: 0
@@ -606,7 +606,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f9d9c1858249d8d44afd777b4bc47d4e, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -717,7 +717,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 217559998}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.41571414, y: 1.5666665, z: 0.04253387}
+  m_LocalPosition: {x: 0.395, y: 1.6, z: 0.04}
   m_LocalScale: {x: 0.019499596, y: 0.84700406, z: 0.7799837}
   m_Children: []
   m_Father: {fileID: 1130549925}
@@ -1352,7 +1352,7 @@ GameObject:
   - component: {fileID: 552958209}
   - component: {fileID: 552958210}
   m_Layer: 0
-  m_Name: Key4
+  m_Name: Key0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1364,13 +1364,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 552958203}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.7165334, y: 0.9041435, z: -1.3709965}
+  m_LocalRotation: {x: 0, y: -0.06975647, z: 0, w: 0.9975641}
+  m_LocalPosition: {x: 2.7165334, y: 0.9041435, z: -1.25}
   m_LocalScale: {x: 0.6, y: 0.06, z: 2.6}
   m_Children: []
   m_Father: {fileID: 2145841391}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -8, z: 0}
 --- !u!65 &552958205
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1448,9 +1448,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1393b40bd82181f439ddc9be258511ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyClip: {fileID: 8300000, guid: f9387e179272a8f42b4b1197848f98ef, type: 3}
+  keyClip: {fileID: 8300000, guid: a2e13a1fdbe40084480a23c90a35d3da, type: 3}
   drumstick: {fileID: 910702895}
-  keyNumber: 4
+  keyNumber: 0
 --- !u!82 &552958210
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1460,7 +1460,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f9387e179272a8f42b4b1197848f98ef, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1722,7 +1722,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 825666404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2047141, y: 1.5666665, z: -0.050802227}
+  m_LocalPosition: {x: 0.195, y: 1.5666665, z: -0.050802227}
   m_LocalScale: {x: 0.019499596, y: 0.84700406, z: 0.7799837}
   m_Children: []
   m_Father: {fileID: 1099094654}
@@ -1977,7 +1977,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 910702895}
-  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
+  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1985,7 +1985,7 @@ Transform:
   - {fileID: 353478775}
   m_Father: {fileID: 910702896}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
 --- !u!1 &931651467
 GameObject:
   m_ObjectHideFlags: 0
@@ -2011,7 +2011,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 931651467}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1966192, y: 1.5666665, z: -0.050802227}
+  m_LocalPosition: {x: -0.187, y: 1.5666665, z: -0.050802227}
   m_LocalScale: {x: 0.019499596, y: 0.84700406, z: 0.7799837}
   m_Children: []
   m_Father: {fileID: 1099094654}
@@ -2310,7 +2310,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1040541772}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.39861923, y: 1.5666665, z: 0.04253387}
+  m_LocalPosition: {x: -0.4, y: 1.6, z: 0.04}
   m_LocalScale: {x: 0.019499596, y: 0.84700406, z: 0.7799837}
   m_Children: []
   m_Father: {fileID: 1130549925}
@@ -2450,7 +2450,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1099094650}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3242848, y: 1.6757326, z: 0.19462013}
+  m_LocalPosition: {x: -0.3242848, y: 1.68, z: 0.46999997}
   m_LocalScale: {x: 6, y: 0.06, z: 0.15}
   m_Children:
   - {fileID: 144589891}
@@ -2539,9 +2539,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1130549921}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3242848, y: 1.6757326, z: -0.80537987}
-  m_LocalScale: {x: 6, y: 0.06, z: 0.15}
+  m_LocalRotation: {x: 0, y: 0.03489949, z: 0, w: 0.99939084}
+  m_LocalPosition: {x: -0.29, y: 1.68, z: -0.72}
+  m_LocalScale: {x: 6.3, y: 0.06, z: 0.15}
   m_Children:
   - {fileID: 1040541773}
   - {fileID: 257835099}
@@ -2550,7 +2550,7 @@ Transform:
   - {fileID: 217559999}
   m_Father: {fileID: 283810632}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 4, z: 0}
 --- !u!1 &1135722434
 GameObject:
   m_ObjectHideFlags: 0
@@ -3003,7 +3003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1393b40bd82181f439ddc9be258511ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyClip: {fileID: 8300000, guid: c64f5ada2b0305a4b8d2ec4edd5cc16c, type: 3}
+  keyClip: {fileID: 8300000, guid: 5f17f8d25d0d2604d99dbfae2d0a6825, type: 3}
   drumstick: {fileID: 910702895}
   keyNumber: 2
 --- !u!82 &1208411336
@@ -3015,7 +3015,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c64f5ada2b0305a4b8d2ec4edd5cc16c, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3234,7 +3234,7 @@ GameObject:
   - component: {fileID: 1565831221}
   - component: {fileID: 1565831222}
   m_Layer: 0
-  m_Name: Key3
+  m_Name: Key1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3246,13 +3246,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1565831215}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4935334, y: 0.9041435, z: -1.3709965}
+  m_LocalRotation: {x: 0, y: -0.026176924, z: 0, w: 0.99965733}
+  m_LocalPosition: {x: 1.4935334, y: 0.9041435, z: -1.36}
   m_LocalScale: {x: 0.6, y: 0.06, z: 2.5}
   m_Children: []
   m_Father: {fileID: 2145841391}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -3, z: 0}
 --- !u!65 &1565831217
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3330,9 +3330,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1393b40bd82181f439ddc9be258511ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyClip: {fileID: 8300000, guid: 54b6aa415c9b1434a8e544d2a5b21564, type: 3}
+  keyClip: {fileID: 8300000, guid: f9d9c1858249d8d44afd777b4bc47d4e, type: 3}
   drumstick: {fileID: 910702895}
-  keyNumber: 3
+  keyNumber: 1
 --- !u!82 &1565831222
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3342,7 +3342,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 54b6aa415c9b1434a8e544d2a5b21564, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3762,7 +3762,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1861893010}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.41571414, y: 1.5666665, z: -0.050802227}
+  m_LocalPosition: {x: 0.392, y: 1.5666665, z: -0.050802227}
   m_LocalScale: {x: 0.019499596, y: 0.84700406, z: 0.7799837}
   m_Children: []
   m_Father: {fileID: 1099094654}
@@ -3853,7 +3853,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1972938495}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.010880789, y: 1.5666665, z: 0.04253387}
+  m_LocalPosition: {x: 0.005, y: 1.6, z: 0.04}
   m_LocalScale: {x: 0.019499596, y: 0.84700406, z: 0.7799837}
   m_Children: []
   m_Father: {fileID: 1130549925}
@@ -4057,7 +4057,6 @@ MonoBehaviour:
   counter: {fileID: 1161550238}
   drumstick: {fileID: 910702895}
   nextReady: 0
-  anim: {fileID: 0}
   rockPlanet: {fileID: 1748001430}
   gasPlanet: {fileID: 590825472}
 --- !u!114 &2081924254
@@ -4110,7 +4109,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2087339390}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2047141, y: 1.5666665, z: 0.04253387}
+  m_LocalPosition: {x: 0.19, y: 1.6, z: 0.04}
   m_LocalScale: {x: 0.019499596, y: 0.84700406, z: 0.7799837}
   m_Children: []
   m_Father: {fileID: 1130549925}

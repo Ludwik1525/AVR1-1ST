@@ -202,18 +202,21 @@ public class OVRCameraRig : MonoBehaviour
 				rightEyeAnchor.localRotation = rightEyeRotation;
 		}
 
-		//Need this for controller offset because if we're on OpenVR, we want to set the local poses as specified by Unity, but if we're not, OVRInput local position is the right anchor
-		if (OVRManager.loadedXRDevice == OVRManager.XRDevice.OpenVR)
+        Vector3 offset = new Vector3(0f, -2f, 0.5f);
+
+        //Need this for controller offset because if we're on OpenVR, we want to set the local poses as specified by Unity, but if we're not, OVRInput local position is the right anchor
+        if (OVRManager.loadedXRDevice == OVRManager.XRDevice.OpenVR)
 		{
 			Vector3 leftPos = Vector3.zero;
 			Vector3 rightPos = Vector3.zero;
 			Quaternion leftQuat = Quaternion.identity;
 			Quaternion rightQuat = Quaternion.identity;
 
-			if (OVRNodeStateProperties.GetNodeStatePropertyVector3(Node.LeftHand, NodeStatePropertyType.Position, OVRPlugin.Node.HandLeft, OVRPlugin.Step.Render, out leftPos))
+
+            if (OVRNodeStateProperties.GetNodeStatePropertyVector3(Node.LeftHand, NodeStatePropertyType.Position, OVRPlugin.Node.HandLeft, OVRPlugin.Step.Render, out leftPos))
 				leftHandAnchor.localPosition = leftPos;
 			if (OVRNodeStateProperties.GetNodeStatePropertyVector3(Node.RightHand, NodeStatePropertyType.Position, OVRPlugin.Node.HandRight, OVRPlugin.Step.Render, out rightPos))
-				rightHandAnchor.localPosition = rightPos;
+				rightHandAnchor.localPosition = rightPos + offset;
 			if (OVRNodeStateProperties.GetNodeStatePropertyQuaternion(Node.LeftHand, NodeStatePropertyType.Orientation, OVRPlugin.Node.HandLeft, OVRPlugin.Step.Render, out leftQuat))
 				leftHandAnchor.localRotation = leftQuat;
 			if (OVRNodeStateProperties.GetNodeStatePropertyQuaternion(Node.RightHand, NodeStatePropertyType.Orientation, OVRPlugin.Node.HandRight, OVRPlugin.Step.Render, out rightQuat))
@@ -223,7 +226,7 @@ public class OVRCameraRig : MonoBehaviour
 		else
 		{
 			leftHandAnchor.localPosition = OVRInput.GetLocalControllerPosition(OVRInput.Controller.LTouch);
-			rightHandAnchor.localPosition = OVRInput.GetLocalControllerPosition(OVRInput.Controller.RTouch);
+			rightHandAnchor.localPosition = OVRInput.GetLocalControllerPosition(OVRInput.Controller.RTouch) + offset;
 			leftHandAnchor.localRotation = OVRInput.GetLocalControllerRotation(OVRInput.Controller.LTouch);
 			rightHandAnchor.localRotation = OVRInput.GetLocalControllerRotation(OVRInput.Controller.RTouch);
 		}
