@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23874918660170310}
   - component: {fileID: 95468104812771490}
   - component: {fileID: 114879563802854080}
+  - component: {fileID: 135613917845359044}
   m_Layer: 0
   m_Name: highestTonePlanet
   m_TagString: Untagged
@@ -115,4 +116,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunLocation: {fileID: 0}
-  speed: 100
+  mass: 75
+--- !u!135 &135613917845359044
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1841772450009654}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3.115509
+  m_Center: {x: -0.012196302, y: 0.000006198883, z: -0.00000333786}

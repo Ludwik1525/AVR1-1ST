@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23876153075919274}
   - component: {fileID: 95578527491253172}
   - component: {fileID: 114736954128407656}
+  - component: {fileID: 135205417195003852}
   m_Layer: 0
   m_Name: middleMinusTonePlanet
   m_TagString: Untagged
@@ -115,4 +116,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunLocation: {fileID: 0}
-  speed: 80
+  mass: 60
+--- !u!135 &135205417195003852
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1518741437108876}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3.115509
+  m_Center: {x: -0.01240325, y: 0.000006198883, z: 0.00002169609}

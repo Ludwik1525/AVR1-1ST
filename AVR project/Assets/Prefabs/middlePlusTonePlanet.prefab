@@ -38,6 +38,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4218243344105524}
   - component: {fileID: 114737953586842810}
+  - component: {fileID: 135212693879302986}
   m_Layer: 0
   m_Name: middlePlusTonePlanet
   m_TagString: Untagged
@@ -56,6 +57,7 @@ GameObject:
   - component: {fileID: 33710230626044752}
   - component: {fileID: 23071056004482256}
   - component: {fileID: 95886476288805482}
+  - component: {fileID: 135484848493260894}
   m_Layer: 0
   m_Name: middlePlusTonePlanet
   m_TagString: Untagged
@@ -236,4 +238,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunLocation: {fileID: 0}
-  speed: 200
+  mass: 80
+--- !u!135 &135212693879302986
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1630750997582050}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &135484848493260894
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1864280031644050}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3.1155097
+  m_Center: {x: -0.012403309, y: 0.0000061988844, z: -0.000003337861}

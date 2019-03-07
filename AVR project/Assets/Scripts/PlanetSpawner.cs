@@ -19,17 +19,17 @@ public class PlanetSpawner : MonoBehaviour {
 
     public float spawnDistance = 50;
     private Quaternion playerRotation;
-    private Vector3 spawnPos;
+    public Vector3 spawnPos;
 
-    public GameObject lowestTonePlanet;
-    public GameObject lowTonePlanet;
-    public GameObject smallTonePlanet;
-    public GameObject middleMinusTonePlanet;
-    public GameObject middleTonePlanet;
-    public GameObject middlePlusTonePlanet;
-    public GameObject bigTonePlanet;
-    public GameObject highTonePlanet;
-    public GameObject highestTonePlanet;
+    private GameObject lowestTonePlanet;
+    private GameObject lowTonePlanet;
+    private GameObject smallTonePlanet;
+    private GameObject middleMinusTonePlanet;
+    private GameObject middleTonePlanet;
+    private GameObject middlePlusTonePlanet;
+    private GameObject bigTonePlanet;
+    private GameObject highTonePlanet;
+    private GameObject highestTonePlanet;
 
     void Start()
     {

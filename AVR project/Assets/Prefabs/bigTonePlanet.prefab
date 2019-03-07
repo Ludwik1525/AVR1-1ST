@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33114215056539090}
   - component: {fileID: 23789283483291726}
   - component: {fileID: 95864098909405736}
+  - component: {fileID: 135044615087388074}
   m_Layer: 0
   m_Name: BigTonePlanet
   m_TagString: Untagged
@@ -38,6 +39,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4821722422125846}
   - component: {fileID: 114179913870238690}
+  - component: {fileID: 135023899955246826}
   m_Layer: 0
   m_Name: bigTonePlanet
   m_TagString: Untagged
@@ -236,4 +238,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunLocation: {fileID: 0}
-  speed: 230
+  mass: 90
+--- !u!135 &135023899955246826
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1710013148521826}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &135044615087388074
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1583776148147590}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3.1155088
+  m_Center: {x: -0.012244224, y: 0.0000061690803, z: -0.000009059905}

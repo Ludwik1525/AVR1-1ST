@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23829215801340088}
   - component: {fileID: 95437113347921902}
   - component: {fileID: 114084068078941726}
+  - component: {fileID: 135803439324318546}
   m_Layer: 0
   m_Name: smallTonePlanet
   m_TagString: Untagged
@@ -115,4 +116,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunLocation: {fileID: 0}
-  speed: 110
+  mass: 70
+--- !u!135 &135803439324318546
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1876317708585430}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3.115509
+  m_Center: {x: -0.012244225, y: 0.000006198883, z: 0.000015735626}

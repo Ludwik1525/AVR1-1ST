@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23692514036511968}
   - component: {fileID: 95937290971461564}
   - component: {fileID: 114572396174128722}
+  - component: {fileID: 135835594073538618}
   m_Layer: 0
   m_Name: lowestTonePlanet
   m_TagString: Untagged
@@ -115,4 +116,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunLocation: {fileID: 0}
-  speed: 150
+  mass: 50
+--- !u!135 &135835594073538618
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1490863465721182}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3.1155088
+  m_Center: {x: -0.012162923, y: 0.0000061988826, z: 0.000021696089}
