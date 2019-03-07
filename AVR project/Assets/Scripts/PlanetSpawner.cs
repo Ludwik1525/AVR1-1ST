@@ -8,6 +8,7 @@ public class PlanetSpawner : MonoBehaviour {
 
     public Text keyInformation;
     public Text counter;
+    public Text error;
     public GameObject drumstick;
     private float average;
     private bool wasPressed = false;
@@ -34,6 +35,7 @@ public class PlanetSpawner : MonoBehaviour {
     void Start()
     {
         stage1 = GetComponent<Stage1>();
+        error.gameObject.SetActive(false);
         averageCalc = drumstick.GetComponent<AverageCalc>();
         lowestTonePlanet = (GameObject)Resources.Load("Prefabs/lowestTonePlanet", typeof(GameObject));
         lowTonePlanet = (GameObject)Resources.Load("Prefabs/lowTonePlanet", typeof(GameObject));
@@ -56,11 +58,19 @@ public class PlanetSpawner : MonoBehaviour {
             {
                 if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger) && !wasPressed)
                 {
-                    keyInformation.gameObject.SetActive(false);
-                    StartCoroutine(Counter(30, counter.GetComponent<Text>()));
-                    wasPressed = true;
-                    drumstick.gameObject.tag = "Active";
-                    this.gameObject.tag = "Immovable";
+                    if (Physics.CheckSphere(spawnPos, 80))
+                    {
+                        error.gameObject.SetActive(true);
+                    }
+                    else
+                    {
+                        error.gameObject.SetActive(false);
+                        keyInformation.gameObject.SetActive(false);
+                        StartCoroutine(Counter(30, counter.GetComponent<Text>()));
+                        wasPressed = true;
+                        drumstick.gameObject.tag = "Active";
+                        this.gameObject.tag = "Immovable";
+                    }
                 }
 
                 if (spawnObject)
