@@ -349,6 +349,7 @@
     <Compile Include="Assets\Scripts\AverageCalc.cs" />
     <Compile Include="Assets\Scripts\DrumstickControl.cs" />
     <Compile Include="Assets\Scripts\KeyScript.cs" />
+    <Compile Include="Assets\Scripts\PlanetSpawner.cs" />
     <Compile Include="Assets\Scripts\Stage1.cs" />
     <Compile Include="Assets\Scripts\Stage2.cs" />
     <Compile Include="Assets\Scripts\TemporaryTestKeys.cs" />

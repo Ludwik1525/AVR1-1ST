@@ -26,6 +26,7 @@ public class Stage1 : MonoBehaviour
 
     void Start ()
     {
+        this.gameObject.tag = "Immovable";
         drumstick.gameObject.tag = "Inactive";
         lowestToneStar.gameObject.SetActive(false);
         lowToneStar.gameObject.SetActive(false);
@@ -89,6 +90,7 @@ public class Stage1 : MonoBehaviour
                 drumstick.gameObject.tag = "Inactive";
                 counter.GetComponent<Text>().text = "" + 30;
                 counter.GetComponent<Text>().color = new Color(1255, 255, 255, 1);
+                this.gameObject.tag = "Movable";
                 nextReady = true;
             }
         }
