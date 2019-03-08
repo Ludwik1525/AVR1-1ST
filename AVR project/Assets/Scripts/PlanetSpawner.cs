@@ -32,6 +32,7 @@ public class PlanetSpawner : MonoBehaviour {
     public GameObject bigTonePlanet;
     public GameObject highTonePlanet;
     public GameObject highestTonePlanet;
+    public GameObject Asteroids;
 
     void Start()
     {
@@ -70,12 +71,20 @@ public class PlanetSpawner : MonoBehaviour {
                     if (average < 0.8f)
                     {
                         Instantiate(lowestTonePlanet, spawnPos, playerRotation);
+                }
+                    else if (average < 1.1f)
+                    {
+                        Instantiate(Asteroids, spawnPos, playerRotation);
                     }
-                    else if (average < 1.4f)
+                else if (average < 1.4f)
                     {
                         Instantiate(lowTonePlanet, spawnPos, playerRotation);
                 }
-                    else if (average < 1.8f)
+                    else if (average < 1.5f)
+                    {
+                        Instantiate(Asteroids, spawnPos, playerRotation);
+                    }
+                else if (average < 1.8f)
                     {
                         Instantiate(smallTonePlanet, spawnPos, playerRotation);
                     }
@@ -83,7 +92,11 @@ public class PlanetSpawner : MonoBehaviour {
                     {
                         Instantiate(middleMinusTonePlanet, spawnPos, playerRotation);
                 }
-                    else if (average < 2.8f)
+                    else if (average < 2.6f)
+                    {
+                        Instantiate(Asteroids, spawnPos, playerRotation);
+                    }
+                else if (average < 2.8f)
                     {
                         Instantiate(middleTonePlanet, spawnPos, playerRotation);
                 }
@@ -91,7 +104,11 @@ public class PlanetSpawner : MonoBehaviour {
                     {
                         Instantiate(middlePlusTonePlanet, spawnPos, playerRotation);
                 }
-                    else if (average < 3.8f)
+                    else if (average < 3.5f)
+                    {
+                        Instantiate(Asteroids, spawnPos, playerRotation);
+                    }
+                else if (average < 3.8f)
                     {
                         Instantiate(bigTonePlanet, spawnPos, playerRotation);
                 }

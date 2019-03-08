@@ -4555,6 +4555,7 @@ MonoBehaviour:
     type: 2}
   highestTonePlanet: {fileID: 1841772450009654, guid: f60e9e145c7b19f49aada6752645ae8b,
     type: 2}
+  Asteroids: {fileID: 1496765880189566, guid: de021d38379261f419304473ae9f0c6a, type: 2}
 --- !u!136 &2081924257
 CapsuleCollider:
   m_ObjectHideFlags: 0
