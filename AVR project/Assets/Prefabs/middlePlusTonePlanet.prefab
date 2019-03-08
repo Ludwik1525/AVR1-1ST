@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33721695983979814}
   - component: {fileID: 23910825259070510}
   - component: {fileID: 95512442999185156}
+  - component: {fileID: 64981860515872982}
   m_Layer: 0
   m_Name: Planet_Ring_E1
   m_TagString: Untagged
@@ -72,7 +73,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1630750997582050}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.656227, y: 2.2459412, z: 261.4897}
+  m_LocalPosition: {x: -819.4302, y: 553.52985, z: -490.01978}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4518825611335238}
@@ -190,6 +191,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1544861714593732}
   m_Mesh: {fileID: 4300016, guid: 8ac9969cd5be28241b55dbf277b11b63, type: 3}
+--- !u!64 &64981860515872982
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1544861714593732}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300016, guid: 8ac9969cd5be28241b55dbf277b11b63, type: 3}
 --- !u!95 &95512442999185156
 Animator:
   serializedVersion: 3
@@ -237,7 +252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e8c9a7a6e287f0429f46d40c0f45fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sunLocation: {fileID: 0}
   mass: 80
 --- !u!135 &135212693879302986
 SphereCollider:

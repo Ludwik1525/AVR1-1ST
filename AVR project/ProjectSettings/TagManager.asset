@@ -9,6 +9,7 @@ TagManager:
   - Movable
   - Immovable
   - Star
+  - StarCenter
   layers:
   - Default
   - TransparentFX

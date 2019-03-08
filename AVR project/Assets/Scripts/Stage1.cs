@@ -43,7 +43,7 @@ public class Stage1 : MonoBehaviour
             if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger) && !wasPressed)
             {
                 keyInformation.gameObject.SetActive(false);
-                StartCoroutine(Counter(30, counter.GetComponent<Text>()));
+                StartCoroutine(Counter(20, counter.GetComponent<Text>()));
                 wasPressed = true;
                 ball.gameObject.tag = "Active";
             }
@@ -89,7 +89,7 @@ public class Stage1 : MonoBehaviour
                 keyInformation.gameObject.SetActive(true);
                 wasPressed = false;
                 ball.gameObject.tag = "Inactive";
-                counter.GetComponent<Text>().text = "" + 30;
+                counter.GetComponent<Text>().text = "" + 20;
                 counter.GetComponent<Text>().color = new Color(1255, 255, 255, 1);
                 this.gameObject.tag = "Movable";
                 nextReady = true;

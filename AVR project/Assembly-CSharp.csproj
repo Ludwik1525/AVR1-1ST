@@ -347,12 +347,11 @@
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceMod.cs" />
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceModContext.cs" />
     <Compile Include="Assets\Scripts\AverageCalc.cs" />
+    <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\DrumstickControl.cs" />
     <Compile Include="Assets\Scripts\KeyScript.cs" />
     <Compile Include="Assets\Scripts\PlanetSpawner.cs" />
     <Compile Include="Assets\Scripts\Stage1.cs" />
-    <Compile Include="Assets\Scripts\Stage2.cs" />
-    <Compile Include="Assets\Scripts\TemporaryTestKeys.cs" />
     <Compile Include="Assets\Scripts\YearsPassing.cs" />
     <None Include="Assets\Oculus\Avatar\Content\Materials\AvatarMaterialStateShader.cginc" />
     <None Include="Assets\Oculus\Avatar\Samples\CrossPlatform\Readme.txt" />

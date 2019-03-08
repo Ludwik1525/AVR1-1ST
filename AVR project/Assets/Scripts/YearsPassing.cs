@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class YearsPassing : MonoBehaviour
 {
-    public GameObject sunLocation;
     public float mass;
     private float speed;
     private float distanceToSun;
     private float sunMass;
+    private Vector3 sunLocation;
 
     void Start ()
     {
-        distanceToSun = Vector3.Distance(sunLocation.gameObject.transform.position, this.transform.position);
+        sunLocation = new Vector3(0, 0, -440);
+        distanceToSun = Vector3.Distance(sunLocation, this.transform.position);
         switch (GameObject.FindGameObjectWithTag("Star").name)
         {
             case "LowestToneStar":
@@ -37,7 +38,7 @@ public class YearsPassing : MonoBehaviour
     }
 	
 	void Update () {
-        transform.RotateAround(sunLocation.transform.position, sunLocation.transform.up, speed * Time.deltaTime);
-        speed = sunMass*(15000/(mass * distanceToSun));
+        transform.RotateAround(sunLocation, new Vector3(0, 1, 0), speed * Time.deltaTime);
+        speed = sunMass*(80000/(mass * distanceToSun));
     }
 }

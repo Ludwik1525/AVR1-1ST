@@ -58,7 +58,7 @@ public class PlanetSpawner : MonoBehaviour {
                     {
                         error.gameObject.SetActive(false);
                         keyInformation.gameObject.SetActive(false);
-                        StartCoroutine(Counter(30, counter.GetComponent<Text>()));
+                        StartCoroutine(Counter(20, counter.GetComponent<Text>()));
                         wasPressed = true;
                         ball.gameObject.tag = "Active";
                         this.gameObject.tag = "Immovable";
@@ -109,7 +109,7 @@ public class PlanetSpawner : MonoBehaviour {
                 {
                     StopAllCoroutines();
                     keyInformation.gameObject.SetActive(true);
-                    counter.GetComponent<Text>().text = "" + 30;
+                    counter.GetComponent<Text>().text = "" + 20;
                     counter.GetComponent<Text>().color = new Color(1255, 255, 255, 1);
 
                     averageCalc.count0 = 0;
