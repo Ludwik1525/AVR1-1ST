@@ -9,7 +9,7 @@ public class PlanetSpawner : MonoBehaviour {
     public Text keyInformation;
     public Text counter;
     public Text error;
-    public GameObject drumstick;
+    [FormerlySerializedAs("drumstick")] public GameObject ball;
     private float average;
     private bool wasPressed = false;
     private bool spawnObject = false;
@@ -21,44 +21,36 @@ public class PlanetSpawner : MonoBehaviour {
     public float spawnDistance = 50;
     private Quaternion playerRotation;
     public Vector3 spawnPos;
+    public Transform CameraTransform;
 
-    private GameObject lowestTonePlanet;
-    private GameObject lowTonePlanet;
-    private GameObject smallTonePlanet;
-    private GameObject middleMinusTonePlanet;
-    private GameObject middleTonePlanet;
-    private GameObject middlePlusTonePlanet;
-    private GameObject bigTonePlanet;
-    private GameObject highTonePlanet;
-    private GameObject highestTonePlanet;
+    public GameObject lowestTonePlanet;
+    public GameObject lowTonePlanet;
+    public GameObject smallTonePlanet;
+    public GameObject middleMinusTonePlanet;
+    public GameObject middleTonePlanet;
+    public GameObject middlePlusTonePlanet;
+    public GameObject bigTonePlanet;
+    public GameObject highTonePlanet;
+    public GameObject highestTonePlanet;
 
     void Start()
     {
         stage1 = GetComponent<Stage1>();
         error.gameObject.SetActive(false);
-        averageCalc = drumstick.GetComponent<AverageCalc>();
-        lowestTonePlanet = (GameObject)Resources.Load("Prefabs/lowestTonePlanet", typeof(GameObject));
-        lowTonePlanet = (GameObject)Resources.Load("Prefabs/lowTonePlanet", typeof(GameObject));
-        smallTonePlanet = (GameObject)Resources.Load("Prefabs/smallTonePlanet", typeof(GameObject));
-        middleMinusTonePlanet = (GameObject)Resources.Load("Prefabs/middleMinusTonePlanet", typeof(GameObject));
-        middleTonePlanet = (GameObject)Resources.Load("Prefabs/middleTonePlanet", typeof(GameObject));
-        middlePlusTonePlanet = (GameObject)Resources.Load("Prefabs/middlePlusTonePlanet", typeof(GameObject));
-        bigTonePlanet = (GameObject)Resources.Load("Prefabs/bigTonePlanet", typeof(GameObject));
-        highTonePlanet = (GameObject)Resources.Load("Prefabs/highTonePlanet", typeof(GameObject));
-        highestTonePlanet = (GameObject)Resources.Load("Prefabs/highestTonePlanet", typeof(GameObject));
+        averageCalc = ball.GetComponent<AverageCalc>();
     }
 
     void Update()
     {
             average = averageCalc.average;
-            spawnPos = this.transform.position + this.transform.forward * spawnDistance;
+            spawnPos = this.transform.position + CameraTransform.forward * spawnDistance;
             playerRotation = this.transform.rotation;
 
             if (stage1.nextReady)
             {
                 if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger) && !wasPressed)
                 {
-                    if (Physics.CheckSphere(spawnPos, 80))
+                    if (Physics.CheckSphere(spawnPos, 30))
                     {
                         error.gameObject.SetActive(true);
                     }
@@ -68,7 +60,7 @@ public class PlanetSpawner : MonoBehaviour {
                         keyInformation.gameObject.SetActive(false);
                         StartCoroutine(Counter(30, counter.GetComponent<Text>()));
                         wasPressed = true;
-                        drumstick.gameObject.tag = "Active";
+                        ball.gameObject.tag = "Active";
                         this.gameObject.tag = "Immovable";
                     }
                 }
@@ -111,7 +103,7 @@ public class PlanetSpawner : MonoBehaviour {
                     {
                         Instantiate(highestTonePlanet, spawnPos, playerRotation);
                 }
-            }
+                }
 
                 if (planetSpawned)
                 {
@@ -129,7 +121,7 @@ public class PlanetSpawner : MonoBehaviour {
                     averageCalc.sub1 = false;
                     averageCalc.sub2 = false;
 
-                    drumstick.gameObject.tag = "Inactive";
+                    ball.gameObject.tag = "Inactive";
                     this.gameObject.tag = "Movable";
 
                     wasPressed = false;

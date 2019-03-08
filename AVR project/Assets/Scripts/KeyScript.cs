@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class KeyScript : MonoBehaviour
 {
 
     public AudioClip keyClip;
 
-    public GameObject drumstick;
+    public GameObject ball;
 
     private AudioSource audioSource;
 
@@ -20,7 +21,7 @@ public class KeyScript : MonoBehaviour
 
     void Start()
     {
-        this.averageCalc = drumstick.GetComponent<AverageCalc>();
+        this.averageCalc = ball.GetComponent<AverageCalc>();
         this.audioSource = gameObject.GetComponent<AudioSource>();
     }
 
@@ -31,7 +32,7 @@ public class KeyScript : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        if (drumstick.gameObject.tag == "Active")
+        if (ball.gameObject.tag == "Active")
         {
             this.audioSource.PlayOneShot(this.keyClip);
             this.averageCalc.Increment(this.keyNumber);

@@ -7,13 +7,11 @@ public class YearsPassing : MonoBehaviour
     public GameObject sunLocation;
     public float mass;
     private float speed;
-    private PlanetSpawner planetSpawner;
     private float distanceToSun;
     private float sunMass;
 
     void Start ()
     {
-        planetSpawner = GetComponent<PlanetSpawner>();
         distanceToSun = Vector3.Distance(sunLocation.gameObject.transform.position, this.transform.position);
         switch (GameObject.FindGameObjectWithTag("Star").name)
         {

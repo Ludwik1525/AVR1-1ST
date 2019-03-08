@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 using InputTracking = UnityEngine.XR.InputTracking;
 using Node = UnityEngine.XR.XRNode;
@@ -12,7 +13,7 @@ public class Stage1 : MonoBehaviour
     public Text keyInformation;
     public Text counter;
     private bool wasPressed = false;
-    public GameObject drumstick;
+    [FormerlySerializedAs("ball")] public GameObject ball;
     private bool spawnObject = false;
     public GameObject highToneStar;
     public GameObject bigToneStar;
@@ -27,7 +28,7 @@ public class Stage1 : MonoBehaviour
     void Start ()
     {
         this.gameObject.tag = "Immovable";
-        drumstick.gameObject.tag = "Inactive";
+        ball.gameObject.tag = "Inactive";
         lowestToneStar.gameObject.SetActive(false);
         lowToneStar.gameObject.SetActive(false);
         middleToneStar.gameObject.SetActive(false);
@@ -44,10 +45,10 @@ public class Stage1 : MonoBehaviour
                 keyInformation.gameObject.SetActive(false);
                 StartCoroutine(Counter(30, counter.GetComponent<Text>()));
                 wasPressed = true;
-                drumstick.gameObject.tag = "Active";
+                ball.gameObject.tag = "Active";
             }
 
-            AverageCalc averageCalc = drumstick.GetComponent<AverageCalc>();
+            AverageCalc averageCalc = ball.GetComponent<AverageCalc>();
             average = averageCalc.average;
 
             if (spawnObject)
@@ -87,7 +88,7 @@ public class Stage1 : MonoBehaviour
                 averageCalc.sub2 = false;
                 keyInformation.gameObject.SetActive(true);
                 wasPressed = false;
-                drumstick.gameObject.tag = "Inactive";
+                ball.gameObject.tag = "Inactive";
                 counter.GetComponent<Text>().text = "" + 30;
                 counter.GetComponent<Text>().color = new Color(1255, 255, 255, 1);
                 this.gameObject.tag = "Movable";
