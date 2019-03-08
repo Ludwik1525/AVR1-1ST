@@ -73,6 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4806857518895046}
+  - component: {fileID: 114070343202462792}
   m_Layer: 0
   m_Name: Asteroids
   m_TagString: Untagged
@@ -775,3 +776,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114070343202462792
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1496765880189566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e8c9a7a6e287f0429f46d40c0f45fbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 15

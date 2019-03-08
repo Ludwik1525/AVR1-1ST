@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 4}
-  m_MinSize: {x: 950, y: 521}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -67,8 +67,8 @@ MonoBehaviour:
     y: 0
     width: 234
     height: 731
-  m_MinSize: {x: 234, y: 471}
-  m_MaxSize: {x: 10004, y: 14021}
+  m_MinSize: {x: 234, y: 492}
+  m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
   controlID: 73
 --- !u!114 &4
@@ -92,7 +92,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &5
 MonoBehaviour:
@@ -136,8 +136,8 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 711, y: 471}
-  m_MaxSize: {x: 18006, y: 14021}
+  m_MinSize: {x: 713, y: 492}
+  m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
   controlID: 72
 --- !u!114 &7
@@ -180,8 +180,8 @@ MonoBehaviour:
     y: 0
     width: 1025
     height: 731
-  m_MinSize: {x: 202, y: 421}
-  m_MaxSize: {x: 4002, y: 8021}
+  m_MinSize: {x: 202, y: 442}
+  m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
   controlID: 28
 --- !u!114 &9
@@ -202,8 +202,8 @@ MonoBehaviour:
     y: 0
     width: 234
     height: 336
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -227,8 +227,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 731
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -252,8 +252,8 @@ MonoBehaviour:
     y: 0
     width: 1025
     height: 466
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -279,8 +279,8 @@ MonoBehaviour:
     y: 466
     width: 1025
     height: 265
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -669,7 +669,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: e8380000
     m_LastClickedID: 0
     m_ExpandedIDs: defbffff00000000
     m_RenameOverlay:
@@ -777,7 +777,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 802b0000
     m_LastClickedID: 11136
-    m_ExpandedIDs: 00000000442f0000a431000058330000e8350000e8360000b8370000dc380000b63a0000ee3a0000743d0000963d00003a3e0000c23e00002240000070400000a2410000ec460000ee460000f0460000f2460000f4460000
+    m_ExpandedIDs: 00000000442f0000a4310000ee350000f0360000cc370000e6380000d43a00000c3b00009e3d0000ee3e0000903f0000504000009e400000d24100006447000066470000684700006a4700006c470000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -802,10 +802,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 128}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000442f0000a4310000e8350000e8360000c2370000dc380000b63a0000ee3a0000743d0000c23e0000643f00002240000070400000a2410000ec460000ee460000f0460000f2460000f4460000
+    m_ExpandedIDs: ffffffff00000000442f0000a4310000ee350000f0360000c2370000cc370000e6380000d43a00000c3b00009e3d0000c23d0000ee3e0000903f0000504000009e400000d24100006447000066470000684700006a4700006c470000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1002,7 +1002,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.13459931, y: -0.86176693, z: 0.30068254, w: -0.38578606}
     speed: 2
-    m_Value: {x: -0.13459931, y: -0.86176693, z: 0.30068254, w: -0.38578606}
+    m_Value: {x: 0.13459931, y: 0.8617669, z: -0.30068254, w: 0.38578606}
   m_Size:
     m_Target: 24.757595
     speed: 2
