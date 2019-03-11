@@ -51,19 +51,19 @@ public class PlanetSpawner : MonoBehaviour {
             {
                 if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger) && !wasPressed)
                 {
-                    if (Physics.CheckSphere(spawnPos, 30))
+                    /*if (Physics.CheckSphere(spawnPos, 30))
                     {
                         error.gameObject.SetActive(true);
                     }
                     else
-                    {
+                    {*/
                         error.gameObject.SetActive(false);
                         keyInformation.gameObject.SetActive(false);
                         StartCoroutine(Counter(20, counter.GetComponent<Text>()));
                         wasPressed = true;
                         ball.gameObject.tag = "Active";
                         this.gameObject.tag = "Immovable";
-                    }
+                    //}
                 }
 
                 if (spawnObject)
